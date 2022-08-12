@@ -44,5 +44,11 @@ RUN ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa && \
     echo "service ssh start"  >> ~/.bashrc
 
 
-# master-web-port  worker-server-port  task-web-port  spark-history-port
-EXPOSE 8080 7077 4040 18080
+# master-web-port      
+EXPOSE 8080 
+# worker-server-port
+EXPOSE 7077 
+# task-web-port
+EXPOSE 4040 
+# spark-history-port
+EXPOSE 18080
